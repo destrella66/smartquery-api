@@ -1,0 +1,76 @@
+### Variable
+@url = http://localhost:3000/api/v1 
+
+### GET chamados
+GET {{url}}/chamados HTTP/1.1
+Content-Type: application/json
+
+### GET one chamado
+GET {{url}}/chamados/9 HTTP/1.1
+Content-Type: application/json
+
+### DELETE delete chamado
+DELETE {{url}}/chamados/10 HTTP/1.1
+Content-Type: application/json
+
+### PUT one chamado
+PUT {{url}}/chamados/10 HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "davi SEM JOE",
+    "descricao": "se qweqweamam"
+}
+
+### POST chamados
+POST {{url}}/chamados HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "davi e jeqweoe",
+    "telefone": "davi e jeqweoe",
+    "endereco": "davi e jeqweoe",
+    "numero": "davi e jeqweoe",
+    "estado": "davi e jeqweoe"
+}
+
+///////////// cliente
+### GET cliente
+GET {{url}}/clientes HTTP/1.1
+Content-Type: application/json
+
+### GET one cliente
+GET {{url}}/clientes/2 HTTP/1.1
+Content-Type: application/json
+
+### DELETE delete cliente
+DELETE {{url}}/clientes/10 HTTP/1.1
+Content-Type: application/json
+
+### PUT one cliente
+PUT {{url}}/clientes/10 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "davi e jeqweoe",
+    "telefone": "davi e jeqweoe",
+    "endereco": "davi e jeqweoe",
+    "numero": "davi e jeqweoe",
+    "estado": "davi e jeqweoe"
+}
+
+
+### POST cliente
+POST {{url}}/clientes HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "davi easdas jeqweoe",
+    "telefone": "davi e jeqweoe",
+    "endereco": "davi e asdjeqweoe",
+    "numero": "davi e jeqdasdweoe",
+    "estado": "davi e jeqweoe",
+    "genero": "davi e jeqweoe",
+    "aniversario": "davi e jeqweoe",
+    "cpf": "davi e jeqweoe"
+}
