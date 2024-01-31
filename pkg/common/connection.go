@@ -28,8 +28,9 @@ func OpenConnection() (*gorm.DB, error) {
 
 func automigrate(db *gorm.DB) {
 	db.Debug().AutoMigrate(
-		// Chamado{},
-		// Cliente{},
+		Chamado{},
+		Admin{},
+		Cliente{},
 		Produto{},
 	)
 }
