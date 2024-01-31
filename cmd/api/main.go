@@ -1,6 +1,6 @@
 package main
 
-import "anliben/teste/pkg/setup"
+import "destrella66/pkg/setup"
 
 func main() {
 	setup.Setup()
