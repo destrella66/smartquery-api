@@ -1,7 +1,7 @@
 package chamado
 
 import (
-	"anliben/teste/pkg/common"
+	"destrella66/pkg/common"
 	"net/http"
 
 	"github.com/gofiber/fiber/v2"

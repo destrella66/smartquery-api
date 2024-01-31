@@ -1,9 +1,11 @@
 package setup
 
 import (
-	"anliben/teste/pkg/chamado"
-	"anliben/teste/pkg/cliente"
-	"anliben/teste/pkg/common"
+	"destrella66/pkg/admins"
+	"destrella66/pkg/chamado"
+	"destrella66/pkg/cliente"
+	"destrella66/pkg/common"
+	"destrella66/pkg/produtos"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
@@ -23,6 +25,8 @@ func Setup() {
 
 	chamado.RegisterRoutes(app, db)
 	cliente.RegisterRoutes(app, db)
+	produtos.RegisterRoutes(app, db)
+	admins.RegisterRoutes(app, db)
 
 	app.Listen(":3000")
 }

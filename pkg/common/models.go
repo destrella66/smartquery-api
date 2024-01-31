@@ -3,7 +3,7 @@ package common
 import "gorm.io/gorm"
 
 type Admin struct {
-	Id             int    `gorm:"type:int;primary_key"`
+	gorm.Model
 	Nome           string `json:"nome"`
 	Genero         string `json:"genero"`
 	Nascimento     string `json:"aniversario"`

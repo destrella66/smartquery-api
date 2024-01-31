@@ -21,14 +21,15 @@ func OpenConnection() (*gorm.DB, error) {
 		return nil, err
 	}
 
-	// automigrate(db)
+	automigrate(db)
 
 	return db, err
 }
 
 func automigrate(db *gorm.DB) {
 	db.Debug().AutoMigrate(
-	// Chamado{},
-	// Cliente{},
+		// Chamado{},
+		// Cliente{},
+		Produto{},
 	)
 }
