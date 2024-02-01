@@ -6,6 +6,7 @@ import (
 	"destrella66/pkg/cliente"
 	"destrella66/pkg/common"
 	"destrella66/pkg/menu"
+	menuDB "destrella66/pkg/menu_hd"
 	"destrella66/pkg/produtos"
 
 	"github.com/gofiber/fiber/v2"
@@ -29,6 +30,7 @@ func Setup() {
 	produtos.RegisterRoutes(app, db)
 	admins.RegisterRoutes(app, db)
 	menu.RegisterRoutes(app, db)
+	menuDB.RegisterRoutes(app, db)
 
 	app.Listen(":3000")
 }

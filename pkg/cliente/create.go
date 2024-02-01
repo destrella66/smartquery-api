@@ -29,6 +29,6 @@ func (r handler) Create(app *fiber.Ctx) error {
 	}
 
 	return app.Status(http.StatusCreated).JSON(&fiber.Map{
-		"Items": cliente,
+		"items": cliente,
 	})
 }

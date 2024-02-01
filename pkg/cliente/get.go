@@ -20,6 +20,6 @@ func (r handler) GetAll(app *fiber.Ctx) error {
 
 	return app.JSON(&fiber.Map{
 		"Count": len(clientes),
-		"Items": clientes,
+		"items": clientes,
 	})
 }
