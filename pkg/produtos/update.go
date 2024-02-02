@@ -24,8 +24,8 @@ func (r handler) Update(app *fiber.Ctx) error {
 	err = r.Db.Model(&produto).
 		Where("id = ?", id).
 		UpdateColumns(common.Produto{
-			Nome:  produto.Nome,
-			Preco: produto.Preco,
+			Nome:  foo.Nome,
+			Preco: foo.Preco,
 		}).Error
 
 	if err != nil {

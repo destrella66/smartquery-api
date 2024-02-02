@@ -21,7 +21,7 @@ func OpenConnection() (*gorm.DB, error) {
 		return nil, err
 	}
 
-	automigrate(db)
+	// automigrate(db)
 
 	return db, err
 }

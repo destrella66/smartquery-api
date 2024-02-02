@@ -6,7 +6,7 @@ type Admin struct {
 	gorm.Model
 	Nome           string `json:"nome"`
 	Genero         string `json:"genero"`
-	Nascimento     string `json:"aniversario"`
+	Nascimento     string `json:"nascimento"`
 	CPF            string `json:"cpf"`
 	Telefone       string `json:"telefone"`
 	Endereco       string `json:"endereco"`
@@ -24,7 +24,7 @@ type Cliente struct {
 	gorm.Model
 	Nome           string `json:"nome"`
 	Genero         string `json:"genero"`
-	Nascimento     string `json:"aniversario"`
+	Nascimento     string `json:"nascimento"`
 	CPF            string `json:"cpf"`
 	Telefone       string `json:"telefone"`
 	Endereco       string `json:"endereco"`
@@ -46,8 +46,9 @@ type SubMenuItem struct {
 	Icon  string `json:"icon"`
 }
 
+
 type Produto struct {
-	ID    int     `json:"id"`
+	gorm.Model
 	Nome  string  `json:"nome"`
-	Preco float64 `json:"preco"`
+	Preco string `json:"preco"`
 }

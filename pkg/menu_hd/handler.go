@@ -23,12 +23,7 @@ var menuHD = []Menu{
 		Link:  "chamados",
 		Icon:  "po-icon po-icon-news",
 	},
-	{
-		Id:    3,
-		Label: "Clientes",
-		Link:  "clientes",
-		Icon:  "po-icon po-icon-handshake",
-	},
+	
 	{
 		Id:    4,
 		Label: "Produtos",
@@ -38,7 +33,7 @@ var menuHD = []Menu{
 	{
 		Id:    5,
 		Label: "Voltar",
-		Link:  "home",
+		Link:  "sair",
 		Icon:  "po-icon po-icon-exit",
 	},
 }

@@ -56,23 +56,23 @@ var menu = []Menu{
 	},
 	{
 		Id:    6,
-		Label: "Help Desk",
-		Link:  "projeto-x",
+		Label: "HelpDesk",
+		Link:  "helpdesk",
 		Icon:  "po-icon-clipboard",
 		SubItems: []common.SubMenuItem{
 			{
 				Label: "DashBoard",
-				Link:  "dashboard-x",
+				Link:  "helpdesk",
 				Icon:  "po-icon-user",
 			},
 			{
-				Label: "Clientes",
-				Link:  "clientes-x",
+				Label: "Produtos",
+				Link:  "produtos",
 				Icon:  "po-icon-user",
 			},
 			{
 				Label: "Chamados",
-				Link:  "chamados-x",
+				Link:  "chamados",
 				Icon:  "po-icon-user",
 			},
 		},
